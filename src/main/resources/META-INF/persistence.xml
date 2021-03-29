@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             version="2.1">
+    <persistence-unit name="jpaPersist">
+        <properties>
+            <!-- 필수 속성 -->
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="id"/>
+            <property name="javax.persistence.jdbc.password" value="password"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/test?useUnicode=yes"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDB53Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
